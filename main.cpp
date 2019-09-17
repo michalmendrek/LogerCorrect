@@ -14,10 +14,7 @@ void funkcja_dwa(std::string data, std::string name) {
 int main() {
   log_module plik("/var/log/");
   plik.AddModule("DrowsinessModule", funkcja_testu);
-  //plik.AddModule("module2", funkcja_dwa);
-
-  //std::cout << "Module1\n\r " << plik.GetWholeLog("DrowsinessModule") << std::endl;
-  //std::cout << "Module2\n\r " << plik.GetWholeLog("module2") << std::endl;
+  std::cout << plik.GetWholeLog("DrowsinessModule") << std::endl;
   while (1)
     ;
 }

@@ -61,7 +61,6 @@ void notify::handler(int sig) {
 
 void notify::AddFileName(std::string FileName,
                          std::function<void(std::string,std::string)> func) {
-  std::cout << "FileNAME: " << FileName << std::endl;
   File.push_back(std::make_tuple(FileName, func));
 }
 
